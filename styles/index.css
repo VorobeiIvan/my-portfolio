@@ -1,4 +1,26 @@
-/* Reset styles */
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgba(71, 92, 111, 0.5);
+  font-size: 16px;
+  background-color: #507f97;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 h1,
 h2,
 h3,
@@ -6,267 +28,136 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
-}
-
-p:last-child {
-    margin-bottom: 0;
-}
-
-ul,
-ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    color: currentColor;
-    text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
-    cursor: pointer;
-    border: none;
-    background: transparent;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+.page {
+  margin: auto;
+  display: grid;
+  grid-template-areas: 'header' 'main' 'main' 'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr 40px;
 
-form {
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: none;
-}
-
-input,
-textarea,
-button {
-    font-family: inherit;
-    line-height: inherit;
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-
-    background: #507f97;
-    color: rgba(71, 92, 111, 0.50);
-    font-family: "Apple Symbols";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  background-color: #fff;
+  width:60vw;
+  height: 80vh;
+  padding: 20px 40px;
+  border-radius: 20px;
 
 }
-
-.wrapper {
-    margin: 80px;
-    max-width: 1000px;
-    border-radius: 20px;
-    background: #F8FAFB;
-    display: grid;
-    grid-template-areas:
-        "h h"
-        "s m"
-        "f f"
-    ;
-    grid-template-rows: 40px 1fr 40px;
-    grid-template-columns: 280px 1fr;
-    row-gap: 20px;
-    column-gap: 40px;
-
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
-
-
-}
-
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    grid-area: h;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #507f9773 2px solid;
 }
-
-.container {
-    padding: 40px;
-}
-
-.header-actions-wrapper {}
 
 .header-actions-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
-.header-action-item {}
-
-.theme-btn {}
-
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#divider {
+  width: 2px;
+  height: 20px;
+  background-color: rgba(71, 92, 111, 0.5);
 }
-
-.theme-btn--light {}
-
 .icon {
-    width: 24px;
-    height: 24px;
-    fill: #475C6F;
-    stroke: #475C6F;
-    background-color: #5d4b4b;
-
-}
-
-.icon-theme--light {
-    border-radius: 50%;
-}
-
-.lang-btn {}
-
-.icon-lang {
-    border-radius: 50%;
-    fill: #cfd8dc;
-    stroke: #cfd8dc;
-}
-
-.nav {
-    display: flex;
-    justify-content: flex-end;
+  fill: rgba(71, 92, 111, 0.5);
 }
 
 .nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
-
-.nav-item {
-    color: #475C6F;
-    font-family: "Apple Symbols";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.sidebar {
-    padding: 20px;
-    grid-area: s;
-
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
 .main {
-    grid-area: m;
+  display: flex;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.about-me-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+.contacts-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
-.section {
-    padding: 20px;
+.icon-avatar {
+  border: 1px solid rgba(71, 92, 111, 0.5);
+  border-radius: 50%;
+  padding: 5px;
+  fill: rgba(71, 92, 111, 0.5);
 }
-
-.section-title {
-    color: #475c6f6b;
-    text-shadow: 0px 4px 4px rgba(133, 193, 233, 0.25);
-    font-family: "Apple Symbols";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration-line: underline;
+.address {
+  font-style: normal;
+  text-align: center;
 }
-
-.title {}
-
-.about-me-text {}
-
-.projects-section {
-    display: none;
-}
-
-.search-form {}
-
-.search-label {}
-
-.search-input {}
-
-.search-btn {}
-
-.icon-search {}
-
-.projects-list {}
-
-.project-item {}
-
-.project-img {}
-
-.project-title {}
-
-.tools-list {}
-
-.tool-item {}
-
-.icon-tool {}
-
-.links-list {}
-
-.link-item {}
-
-.icon-link {}
-
-.all-tools-list {}
-
-.all-tools-item {}
-
-.contacts-section {
-    display: none;
-}
-
-.contacts-text {}
-
-.location {}
-
-.contacts-item {}
-
-.contacts-link {}
 
 .footer {
-    border-top: 1px solid #E5E5E5;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    grid-area: f;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-top: #507f9773 2px solid;
 }
 
-.footer-actions-list {}
+.footer-actions-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-.footer-action-item {}
+  overflow-y: scroll;
 
-.icon-footer {}
+padding-top: 40px;
+padding-bottom: 40px;
+
+}
+
+.sidebar-title {
+  font-weight: 700;
+  font-size: 28px;
+  color: #b4b8bb;
+}
