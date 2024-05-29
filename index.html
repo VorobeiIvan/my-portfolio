@@ -1,206 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Ivan Vorobei developer from Ukraine "
+    />
     <title>My portfolio</title>
-    <link rel="stylesheet" href="/styles/index.css">
-</head>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
 
-<body>
-    <div class="wrapper container">
-        <header class="header">
-            <div class="header-actions-wrapper">
-                <ul class="header-actions-list">
-                    <li class="header-action-item">
-                        <button class="theme-btn btn theme-btn--light" type="button">
-                            <svg class="icon icon-theme--light">
-                                <use href="./img/theme.svg"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="header-action-item">
-                        <button class="lang-btn btn" type="button">
-                            <svg class="icon icon-lang">
-                                <use xlink:href="/img/language.svg"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="/index.html">About me</a></li>
-                    <li class="nav-item"><a href="/projects.html">My projects</a></li>
-                    <li class="nav-item"><a href="/contacts.html">Contacts</a></li>
-                </ul>
-            </nav>
-        </header>
+  <body>
+    <div class="page">
+      <header class="header">
+        <ul class="header-actions-list">
+          <li class="header-action-item">
+            <button class="theme-btn btn theme-btn--light" type="button">
+              <svg class="icon icon-theme--light" width="24" height="24">
+                <use href="./img/sprite.svg#icon-theme"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <div id="divider"></div>
+          </li>
+          <li class="header-action-item">
+            <button class="lang-btn btn" type="button">
+              <svg class="icon icon-language" width="24" height="24">
+                <use href="./img/sprite.svg#icon-language"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects.html">My projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
         <sidebar class="sidebar">
-
-            <img src="/img/sidebar-img.png" alt="" width="200" height="200">
-
-            <h2 class="sidebar-title">My name</h2>
-            <p class="sidebar-text">Front-end developer</p>
-            <ul class="contacts-list">
-                <li class="contacts-item">
-                    <a href="tel:+380961111111" class="contacts-link"> <svg class="icon icon-social">
-                            <use xlink:href="img/icon-social"></use>
-                        </svg> </a>
-                </li>
-                <li class="contacts-item">
-                    <a href="mailto:3HJqU@example.com" class="contacts-link"> <svg class="icon icon-social">
-                            <use xlink:href="img/icon-social"></use>
-                        </svg></a>
-                </li>
-
-            </ul>
-            <address class="address"> Kyiv, Ukraine </address>
-            <a class="btn btn--primary" href="#" download>Download CV</a>
-
-            <ul class="social-list">
-                <li class="social-item">
-                    <a href="#">
-                        <svg class="icon icon-social">
-                            <use xlink:href="img/icon-social"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="my-projects-list">
-                <li>
-                    <a href="#" class="my-projects-link">
-                        Web Studio
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="my-projects-link">
-                        Calculator
-                    </a>
-                </li>
-            </ul>
-
+          <svg class="icon icon-avatar" width="120" height="120">
+            <use href="./img/sprite.svg#icon-avatar"></use>
+          </svg>
+          <h1 class="sidebar-title">Ivan Vorobei</h1>
+          <p class="sidebar-text">Fullstack Developer</p>
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a href="tel:+380961111111" class="contacts-link">
+                <svg class="icon icon-phone" width="32" height="32">
+                  <use href="./img/sprite.svg#icon-phone"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts-item">
+              <a href="mailto:3HJqU@example.com" class="contacts-link">
+                <svg class="icon icon-mail" width="32" height="32">
+                  <use href="./img/sprite.svg#icon-mail"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts-item">
+              <a href="telegram.com" class="contacts-link">
+                <svg class="icon icon-telegram" width="32" height="32">
+                  <use href="./img/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contacts-item">
+              <a href="telegram.com" class="contacts-link">
+                <svg class="icon icon-linkedin" width="32" height="32">
+                  <use href="./img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+              <li class="contacts-item">
+                <a href="telegram.com" class="contacts-link">
+                  <svg class="icon icon-github" width="32" height="32">
+                    <use href="./img/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+            </li>
+          </ul>
+          <address class="address">Ukraine, Kyiv region, Vyshhorod sity </address>
+          <a class="btn btn--primary" href="#" download>Download CV</a>
         </sidebar>
-        <main class="main">
-            <section class="about-me-section section">
-                <h2 class="section-title title">About me</h2>
 
-                <p class="about-me-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                </p>
+        <section class="about-me-section section">
+          <h2 class="section-title title">About me</h2>
 
-                <p class="about-me-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                </p>
+          <p class="about-me-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
 
-            </section>
-            <section class="projects-section section">
-
-                <h2 class="section-title title">My projects</h2>
-
-                <form class="search-form">
-                    <label class="search-label">
-                        <input id="search" type="text" placeholder="Search..." class="search-input">
-                    </label>
-                    <button class="search-btn btn" type="submit">
-                        <svg class="icon icon-search" width="24" height="24">
-                            <use xlink:href="img/icon-search"></use>
-                        </svg>
-                    </button>
-                </form>
-
-                <ul class="projects-list">
-                    <li class="project-item">
-                        <img src="/img/project-img.png" alt=" project" class="project-img" width="370" height="294">
-                        <h2 class="project-title">Project</h2>
-                        <p>description</p>
-                        <h3>Tools</h3>
-                        <ul class="tools-list">
-                            <li class="tool-item">
-                                <svg class="icon icon-tool">
-                                    <use xlink:href="img/icon-tool"></use>
-                                </svg>
-                            </li>
-                        </ul>
-                        <h3>Links</h3>
-                        <ul class="links-list">
-                            <li class="link-item">
-                                <a href="#">
-                                    <svg class="icon icon-link">
-                                        <use xlink:href="img/icon-link"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="link-item">
-                                <a href="#">
-                                    <svg class="icon icon-link">
-                                        <use xlink:href="img/icon-link"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="all-tools-list">
-                    <li class="all-tools-item">
-                        <svg class="icon icon-tool">
-                            <use xlink:href="img/icon-tool"></use>
-                        </svg>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="contacts-section section">
-                <h2>Contacts</h2>
-                <address class="contacts-text location"> Kyiv, Ukraine </address>
-
-                <ul>
-                    <li class="contacts-item">
-                        <a href="tel:+380961111111" class="contacts-link"> +38 096 111 11 11 </a>
-                    </li>
-                    <li class="contacts-item">
-                        <a href="mailto:3HJqU@example.com" class="contacts-link"> 3HJqU@example.com </a>
-                    </li>
-                    <li class="contacts-item">
-                        <a href="#" class="contacts-link">Telegram</a>
-                    </li>
-                    <li class="contacts-item">
-                        <a href="#" class="contacts-link">LinkedIn</a>
-                    </li>
-                    <li class="contacts-item">
-                        <a href="#" class="contacts-link">GitHub</a>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer class="footer">
-            <ul class="footer-actions-list">
-                <li class="footer-action-item">
-                    <a href="#">
-                        <svg class="icon icon-footer">
-                            <use xlink:href="img/icon-footer"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </footer>
+          <p class="about-me-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+      </main>
+      <footer class="footer">
+        <ul class="footer-actions-list">
+          <li class="footer-action-item">
+            <a href="#">
+              <svg class="icon icon-career" width="32" height="32">
+                <use href="./img/sprite.svg#icon-career"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-action-item">
+            <a href="#">
+              <svg class="icon icon-projects" width="32" height="32">
+                <use href="./img/sprite.svg#icon-projects"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-action-item">
+            <a href="#">
+              <svg class="icon icon-documents" width="32" height="32">
+                <use href="./img/sprite.svg#icon-documents"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-action-item">
+            <a href="#">
+              <svg class="icon icon-education" width="32" height="32">
+                <use href="./img/sprite.svg#icon-education"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-action-item">
+            <a href="#">
+              <svg class="icon icon-experience" width="32" height="32">
+                <use href="./img/sprite.svg#icon-experience"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
